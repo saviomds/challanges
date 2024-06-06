@@ -2,6 +2,10 @@
 
 COA TASKFORCE TAKE HOME CHALLENGE : PRODUCT TO BUILD: Interactive Photo Gallery
 
+Figma Design 
+
+https://www.figma.com/design/KPU6yICXezMdwpcEPhP6yN/COA-TASKFORCE-TAKE-HOME-CHALLENGE?node-id=0-1&t=Jd66P6dLFaTwUwd6-1
+
 # challange 1
 
     To run :
