@@ -14,8 +14,6 @@ body {
 .image-container img {
   width: 100%;
   height: 100vh;
-  /* Smooth transition for the zoom effect */
-  transition: transform 0.3s ease;
 }
 .image-container img:hover {
   border: 2px solid #cd00f7;
@@ -24,7 +22,6 @@ body {
 .image-container .image-wrapper:hover {
   /* Gives margin around the image-wrapper on hover */
   cursor: pointer;
-  margin: 10px;
   animation: 3s ease;
 }
 .image-caption {
@@ -41,17 +38,31 @@ body {
   font-size: 30px;
 }
 /* Make images responsive on smaller screens */
+
 @media (max-width: 768px) {
   .image-container {
     display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
   }
+
+  .image-wrapper img {
+    width: 100%; /* Ensure images fill their respective grid areas */
+    height: 40vh;
+  }
+  .image-caption {
+    display: none;
+  }
+  .image-caption h2 {
+    display: none;
+  }
+
   body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     overflow: auto;
+    position: relative;
+    top: 100px;
   }
 }
